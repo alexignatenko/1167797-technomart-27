@@ -8,7 +8,7 @@
 
   	<header>
   		
-  		<div class="top-of-header">
+  		<div class="header-top">
               <div class="tehnomart-top-button">
                   <a href="index.html">ТЕХНОМАРТ</a>
               </div>
@@ -17,28 +17,29 @@
 
 
               <form name="search-form" action="" method="post">
-                  <input type="image" src="" alt="поиск техномарт">
-                  <input type="text" name="search" value="search" placeholder="ПОИСК">
+                  <label for="input-search" id="input-label"></label>
+                  <input id="input-search" type="search" name="search" value="search" placeholder="ПОИСК">
               </form>
               </div>
 
+              <span>
               <a class="bookmarks-link" href="">
-                  <img src="" alt="закладки техномарт">Закладки:0
+                Закладки:0
               </a>
+              </span>
 
               <a class="basket-link" href="">
-                  <img src="" alt="корзина техномарт">Корзина:10
+                Корзина:10
               </a>
 
               <div class="order-button">
               <a class="order-link" href="">
-
-                      <img src="" alt="оформить заказ техномарт">Оформить заказ
+                Оформить заказ
               </a>
               </div>
           </div>
 
-          <div class="bottom-of-header">
+          <div class="header-bottom">
 
               <p>
                   Интернет-магазин<br>
@@ -48,7 +49,7 @@
 
 
               <div class="user-button">
-                  <a href=""><img src="" alt="иконка пользователя техномарт">Равшан Джамшутович<img src="" alt="войти техномарт"></a>
+                  <a href="">Равшан Джамшутович></a>
                   <ul class="user-links">
                   	<a href="">Мои заказы</a>
                   	<a href="">Личный кабинет</a>
@@ -74,14 +75,13 @@
   	</header>
 
   	<main>
-  		<div class="breadcrumb">
-  			<ul>
+
+  			<ul class="breadcrumb">
   				<li><a href="index.html"><img src="" alt="главная страница техномарт"></a></li>
   				<li>КАТАЛОГ</li>
   				<li><a href="">ИНСТРУМЕНТ</li>
   				<li><a href="">ПЕРФОРАТОРЫ</li>
   			</ul>
-  		</div>
 
   		<div class="main-category">
   			<h1>ПЕРФОРАТОРЫ</h1>
@@ -92,13 +92,22 @@
   			<div class="filter">
   				<form class="filter-form" action="" method="post">
   					<h3>ПРОИЗВОДИТЕЛИ</h3>
-  					<ul class="inputs category">
-  						<li><input type="checkbox" checked name="BOSCH"></li>
-  						<li><input type="checkbox" name="ИНТЕРСКОЛ"></li>
-  						<li><input type="checkbox" checked name="MAKITA"></li>
-  						<li><input type="checkbox" name="DEWALT"></li>
-  						<li><input type="checkbox" name="HITACHI"></li>
-  					</ul>
+
+            <label for="bosch">BOSCH</label>
+            <input id="bosch" type="checkbox" checked></li>
+
+            <label for="interskol">ИНТЕРСКОЛ</label>
+            <input id="interskol" type="checkbox"></li>
+
+            <label for="makita">MAKITA</label>
+            <input id="makita" type="checkbox" checked></li>
+
+            <label for="dewalt">DEWALT</label>
+            <input id="dewalt" type="checkbox" name="DEWALT"></li>
+
+            <label for="hitachi">BOSCH</label>
+            <input id="hitachi" type="checkbox" name="HITACHI"></li>
+
 
   					<h3>ПИТАНИЕ</h3>
   					<ul class="inputs battery">
@@ -110,11 +119,141 @@
   				</form>
   			</div>
 
-  			<div class="item-list">
-  				<ul class="products"
+  			<div id="id1" class="item-list">
+          <div class="product-card1">
+            <a href=""><img src=""alt="BOSCH BFG 3000"></a>
 
-  				</ul>
-  			</div>
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 3000</a><br>
+              <a href="">22500 Р.</a>
+            </p>
+
+            <button type="button">15500Р.</button>
+
+          </div>
+          
+          <div id="id2" class="product-card">
+            <a href=""><img src=""alt="BOSCH BFG 6000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 6000</a><br>
+              <a href="">30500 Р.</a>
+            </p>
+
+            <button type="button">22500Р.</button>
+
+            
+          </div>
+
+          <div id="id3" class="product-card">
+
+            <span class="new-tooltip">new</span>
+
+            <a href="">КУПИТЬ</a>
+            <a href="">В ЗАКЛАДКИ</a>
+
+            <p>
+              Перфоратор BOSCH<br>
+              BFG 2000
+            </p>
+
+            <button type="button">12500Р.</button>
+            
+          </div>
+
+          <div id="id4" class="product-card">
+
+            <a href=""><img src=""alt="BOSCH BFG 3000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 3000</a><br>
+              <a href="">22 500 Р.</a>
+            </p>
+
+            <button type="button">15 500Р.</button>
+
+            
+          </div>
+
+          <div id="id5" class="product-card">
+
+            <span class="new-tooltip">
+              <a href="">new</a>
+            </span>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 6000</a><br>
+              <a href="">30500 Р.</a>
+            </p>
+
+            <button type="button">22500Р.</button>
+
+            
+          </div>
+
+          <div id="id6" class="product-card">
+            <a href=""><img src=""alt="BOSCH BFG 2000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 2000</a><br>
+            </p>
+
+            <button type="button">12500Р.</button>
+
+            
+          </div>
+
+          <div id="id7" class="product-card">
+
+            <span class="new-tooltip">
+              <a href="">new</a>
+            </span>
+
+            <a href=""><img src=""alt="BOSCH BFG 3000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 3000</a><br>
+              <a href="">22500 Р.</a>
+            </p>
+
+            <button type="button">15500Р.</button>
+
+            
+          </div>
+
+          <div id="id8" class="product-card">
+            <a href=""><img src=""alt="BOSCH BFG 6000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 6000</a><br>
+              <a href="">30500 Р.</a>
+            </p>
+
+            <button type="button">25500Р.</button>
+
+            
+          </div>
+
+          <div id="id9" class="product-card">
+            <a href=""><img src=""alt="BOSCH BFG 3000"></a>
+
+            <p>
+              <a href="">Перфоратор BOSCH</a><br>
+              <a href="">BFG 2000</a><br>
+            </p>
+
+            <button type="button">12500Р.</button>
+
+            
+          </div>
+        </div>
 
   		</section>	
 
@@ -122,7 +261,7 @@
 
 
   	<footer>
-  		 <div class="top-pf-footer">
+  		 <div class="footer-top">
               <div class="tehnomart-bottom-button">
                 <a href="index.html">ТЕХНОМАРТ</a>
               </div>
@@ -150,28 +289,26 @@
 
           </div>
 
-          <div class="bottom-of-footer">
+          <div class="footer-bottom">
               <p>
                 © 2010-2017 Компания «Техномарт»<br>
                 Все права защищены
               </p>
 
               <ul class="social-links">
-                <il><a href=""><img src="" alt="техномарт vk"></a></il>
-                <il><a href=""><img src="" alt="facebook"></a></il>
-                <il><a href=""><img src="" alt="instagram"></a></il>
+                <il><a class="vk-link" href=""></a></il>
+                <il><a class="instagram-link" href=""></a></il>
+                <il><a class="facebook-link" href=""></a></il>
               </ul>
 
               <div class="feedback-link">
-                <span>Обратная связь:<br>
+                Обратная связь:<br>
                 <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </span>
-              </div>
+                              </div>
 
               <div class="developed-by">
-                <span>Разработано:<br>
+                Разработано:<br>
                 <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-                </span>
               </div>
           </div>
 
