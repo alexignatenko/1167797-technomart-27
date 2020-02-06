@@ -6,3 +6,19 @@
 	height: 266px;
 }
 
+.search-form:before {
+  content: "";
+  background-image: url("./img/svg/icon-search.svg");
+}
+
+.bookmarks-link:before {
+  content: "";
+  background-image: url("./img/svg/icon-bookmark.svg");
+}
+
+.basket-link:before {
+  content: "";
+  background-image: url("./img/svg/icon-cart.svg");
+}
+
+
