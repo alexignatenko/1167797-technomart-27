@@ -1,4 +1,8 @@
 
+body {
+	background-color: red;
+}
+
 .item-gallery {
 	background-image: url("./img/jpg/main_photo_620-266.jpg");
 	background-repeat: no-repeat;
@@ -6,19 +10,50 @@
 	height: 266px;
 }
 
-.search-form:before {
+.search-form {
+	display: block;
+}
+
+.search-form form::before {
   content: "";
   background-image: url("./img/svg/icon-search.svg");
+  position: absolute;
+  width: 17px;
+  height: 17px;
 }
 
-.bookmarks-link:before {
-  content: "";
-  background-image: url("./img/svg/icon-bookmark.svg");
+.open-buttons {
+	display: block;
 }
 
-.basket-link:before {
-  content: "";
-  background-image: url("./img/svg/icon-cart.svg");
+.open-buttons::before {
+	content: "";
+	background-image: url("./img/svg/icon-login.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
 }
+
+
+.contact-button {
+	display: block;
+}
+
+.contact-button::before {
+	content: "";
+	background-image: url("./img/svg/icon-phone.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+
+.social-links li {
+	list-style-type: none
+}
+
+
+
+
 
 
