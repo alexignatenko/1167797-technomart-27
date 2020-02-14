@@ -10,6 +10,8 @@ body {
 	height: 266px;
 }
 
+
+
 .search-form {
 	display: block;
 }
@@ -106,4 +108,8 @@ body {
 input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type="radio"]:checked, input[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
+}
+
+.bottom-nav li {
+	list-style-image: url('./img/svg/icon-right-small.svg');
 }
