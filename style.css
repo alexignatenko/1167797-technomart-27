@@ -1,7 +1,4 @@
 
-body {
-	background-color: red;
-}
 
 .item-gallery {
 	background-image: url("./img/jpg/main_photo_620-266.jpg");
@@ -112,4 +109,17 @@ input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type
 
 .bottom-nav li {
 	list-style-image: url('./img/svg/icon-right-small.svg');
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
+.form-write-us {
+	display: none;
 }
