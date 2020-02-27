@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" type="text/css" href="style/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Каталог Техномарт</title>
   </head>
@@ -58,8 +58,8 @@
               <div class="user-links-block">
 
                   <ul class="user-links">
-                  	<a href="">Мои заказы</a>
-                  	<a href="">Личный кабинет</a>
+                  	<a class="my-orders-link" href="">Мои заказы</a>
+                  	<a "my-cab-link" href="">Личный кабинет</a>
 
                   </ul>
               </div>
@@ -97,18 +97,9 @@
 
         <div class="filter-price">
 
-                    <span>ФИЛЬТР:</span>
-
-          <label for id="price-range">ЦЕНА:</label>
-
-          <div class="range-container">
-          <input type="range" class="slider" min="0" max="35000" step="5000" id="price-range" name="price-range" multiple="" oninput="priceRange()" value="0, 15000">
-          </div>
-
-          <span class="min-price">0</span> - <span class="max-price">30000</span>
-
-
+          <span>ФИЛЬТР:</span>
         </div>  
+        
 
         <div class="filter-type">
 
@@ -122,9 +113,30 @@
 
         </div>
   			
-  			<div class="filter-mark">
+  			<div class="filter">
+
+
   				<form class="filter-form" action="" method="post">
+
+          <label for id="price-range">ЦЕНА:</label>
+
+          <div class="range-container">
+          <input type="range" class="slider" min="0" max="35000" step="500" id="price-range" name="price-range" multiple="" oninput="priceRange()" value="0, 15000">
+          </div>
+
+          <div class="min-price-block">
+           <span class="min-price">0</span>
+          </div>
+
+          - 
+
+          <div class="min-price-block">
+           <span class="max-price">30000</span>
+          </div>
+
   					<h3>ПРОИЗВОДИТЕЛИ</h3>
+
+            <fieldset class="input-makers">
 
             <label for="bosch"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>BOSCH</label><input id="bosch" type="checkbox"></li>
 
@@ -137,9 +149,10 @@
 
             <label for="hitachi"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>BOSCH</label><input id="hitachi" type="checkbox" name="HITACHI"></li>
 
+            </fieldset>
 
   					<h3>ПИТАНИЕ</h3>
-  					<div class="inputs battery">
+  					<fieldset class="inputs battery">
   						<input type="radio" id="akkum-button" checked="" name="АККУМУЛЯТОРЫ">
   						<label for="akkum-button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#c5c5c5" cx="12.5" cy="12.5" r="4.5"/></svg>АККУМУЛЯТОРЫ</label>
   						
@@ -147,7 +160,7 @@
   						<input type="radio" id="set-button" name="СЕТЕВЫЕ"></li>
   						<label for="set-button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
 СЕТЕВЫЕ</label>
-  					</div>
+  					</fieldset> 
 
   					<input type="submit" name="ОТПРАВИТЬ">
   				</form>
@@ -185,9 +198,9 @@
 
             <span class="new-tooltip">new</span>
 
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>КУПИТЬ</a>
+            <button type="button" class="buy-button"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>КУПИТЬ</button>
             
-            <a href="">В ЗАКЛАДКИ</a>
+            <button type="button" class="add-to-bookmarks-button">В ЗАКЛАДКИ</button>
 
             <p>
               Перфоратор BOSCH
@@ -307,7 +320,37 @@
             </p>
           </div>
 
-  		</section>	
+  		</section>
+
+
+      <div class="order-window">
+        <div class="top-order-window">
+
+                  <div class="close-button">
+                    <label class="visually-hidden">ЗАКРЫТЬ ФОРМУ ОТПРАВКИ ЗАЯВКИ
+                    <button type="button" class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
+                    </label>
+                  </div>
+
+                  <div class="icon-add">
+                    <img src=".\img\png\form-1.png" alt="добавлено в корзину">
+                  </div>
+
+                  <span>Товар добавлен в корзину!</span>
+        </div>
+
+                  <div class="cart-buttons">
+
+                    <div class="make-order-button">
+                      <a href="">ОФОРМИТЬ ЗАКАЗ<a>
+                    </div>
+
+                    <button type="button" class="continue-button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+
+                  </div>
+
+      </div>	
+
 
   	</main>
 

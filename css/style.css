@@ -1,0 +1,144 @@
+
+
+.item-gallery {
+	background-image: url("./img/jpg/main_photo_620-266.jpg");
+	background-repeat: no-repeat;
+	width: 620px;
+	height: 266px;
+}
+
+
+
+.search-form {
+	display: block;
+}
+
+.search-label::before {
+  content: "";
+  background-image: url("./img/svg/icon-search.svg");
+  position: absolute;
+  width: 17px;
+  height: 17px;
+}
+
+.open-buttons {
+	display: block;
+}
+
+.open-buttons::before {
+	content: "";
+	background-image: url("./img/svg/icon-login.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+
+.contact-button {
+	display: block;
+}
+
+.contact-button::before {
+	content: "";
+	background-image: url("./img/svg/icon-phone.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+
+.social-links li {
+	list-style-type: none
+}
+
+.user-links li {
+	list-style-type: none
+}
+
+.top-nav li {
+	list-style-type: none
+}
+
+.user-button {
+	display: block;
+}
+
+.user-name::before {
+	content: "";
+	background-image: url("./img/svg/icon-user.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+
+.user-name::after {
+	content: "";
+	background-image: url("./img/svg/icon-login.svg");
+	position: absolute;
+	width: 22px;
+	height: 22px;
+}
+
+.range-container {
+	width: 100%; 
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('./img/svg/filter-button.svg');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('./img/svg/filter-button.svg');
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type="radio"]:checked, input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.bottom-nav li {
+	list-style-image: url('./img/svg/icon-right-small.svg');
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
+.form-write-us {
+	display: none;
+}
+
+.map-window {
+	display: none;
+}
+
+.write-us-window {
+	display: none;
+
+}
+
+.service-card-credit {
+	display: none;
+
+}
+
+.service-card-garanty {
+	display: none;
+
+}

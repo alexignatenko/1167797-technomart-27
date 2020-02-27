@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <title>Интернет-магазин Техномарт</title>
   </head>
@@ -42,7 +42,7 @@
               <p>
                   Интернет-магазин<br>
                   строительных материалов<br>
-                  и инструментов дял ремонта
+                  и инструментов для ремонта
               </p>
 
               <div class="contact-button">
@@ -52,7 +52,7 @@
 
               <div class="open-buttons">
                   <a class="open-link" href ="">Войти</a><br>
-                  <a href="">Регистрация</a>
+                  <a class="reg-link" href="">Регистрация</a>
               </div>
 
               <nav>
@@ -80,7 +80,9 @@
 
             <img src="./img/svg/icon-1.svg" alt="материалы">
 
-            <a href="">НА ЛЮБОЙ ВКУС</a>
+            <div class="card-button">
+             <a href="">НА ЛЮБОЙ ВКУС</a>
+            </div>
 
             <span class="new-tooltip">new</span>
 
@@ -91,18 +93,23 @@
             <h3>Инструмент</h3>
             <img src="./img/svg/icon-2.svg"alt="инструмент">
 
-            <a href="">НА ВСЕ СЛУЧАИ</a>
-            
+            <div class="card-button">
+             <a href="">НА ВСЕ СЛУЧАИ</a>
+            </div>
           </div>
 
            <div class="item-category">
 
+            
             <h3>Техника</h3>
+            
 
             <img src="./img/svg/icon-3.svg"alt="техника">
 
-            <a href="">ДЛЯ СТРОЙКИ</a>
-            
+            <div class="card-button"> 
+             <a href="">ДЛЯ СТРОЙКИ</a>
+            </div>
+
           </div>
 
           <div class="item-gallery">
@@ -112,20 +119,24 @@
 
             <a class="left"  href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg></a>
 
-            <a href="">ОТКРЫТЬ КАТАЛОГ</a>
+            <div class="main-card-button">
+             <a href="">ОТКРЫТЬ КАТАЛОГ</a>
+            </div>
             
             <a class="right"  href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/></svg></a>
 
           </div>
 
            <div class="item-category">
-
-            <h3>Скидки 50%</h3>
+            
+             <h3>Скидки 50%</h3>
+            
 
             <img src="./img/svg/icon-4.svg"alt="скидки">
 
-
-            <a href="">НА 350 ТОВАРОВ</a>
+            <div class="card-button">
+             <a href="">НА 350 ТОВАРОВ</a>
+            </div>
             
           </div>
 
@@ -135,7 +146,9 @@
 
             <img src="./img/svg/icon-5.svg"alt="доставка">
 
-            <a href="">БЕСПЛАТНО</a>
+            <div class="card-button">
+             <a href="">БЕСПЛАТНО</a>
+            </div>
             
           </div>
 
@@ -274,19 +287,14 @@
 
           <p>
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделат ьваши покупки более приятными.
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки более приятными.
           </p>
 
-          <form class="service-selector">
-
-            <select name="select" size="3" multiple>
-              <option selected value="s1">Доставка</option>
-              <option value="s2">Гарантия</option>
-              <option value="s3">Кредит</option>
-            </select>
-
-
-          </form>
+          <ul class="service-selector">
+              <li class="transport-li"><Доставка</li>
+              <li class="garanty-li">Гарантия</li>
+              <li class="credit-li">Кредит</li>
+          </ul>
 
 
 
@@ -313,10 +321,10 @@
             	Если купленный у нас товар поломается или заискрит,<br>
             	а также в случае пожара, спровоцированного его возгоранием,<br>  
             	вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-            	Дом уж восстановите как-нибудь сами.
+            	Дома уж восстановите как-нибудь сами.
             </p>
 
-            <img src="./img/png/garanty.png" alt="гарантия техномарт">
+            <img src="./img/png/garanty.png" alt="гарантия в техномарте">
             
           </div>
 
@@ -329,9 +337,9 @@
             	Кредитные консультанты придут вам на помощь.
             </p>
 
-            <img src="./img/png/credit.png" alt="кредит техномарт">
+            <img src="./img/png/credit.png" alt="кредит в техномарте">
             
-            <label class="visually-hidden" for="submit-button-credit">ОТПРАВИТЬ ЗАЯВКУ</label>
+            <label for="submit-button-credit">ОТПРАВИТЬ ЗАЯВКУ</label>
             <input id="submit-button-credit"type="submit" name="submit">
 
 
@@ -371,7 +379,7 @@
                   заехав в наш офис.<br>
                 </p>
 
-                <a href=""><img src="./img/jpg/map.jpg" width="300px" height="158px" alt="карта техномарт"></a>
+                <a href=""><img src="./img/jpg/map.jpg" width="300px" height="158px" alt="адрес техномарт г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
 
                 <a href="">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</a>
 
@@ -423,7 +431,7 @@
               		</div>
 
               		<div class="close-button">
-              			<label class="visually-hidden">ЗАКРЫТЬ
+              			<label class="visually-hidden">ЗАКРЫТЬ ФОРМУ ОТПРАВКИ ЗАЯВКИ
               			<button type="button" class="close-button"><svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg></button>
               			</label>
               		</div>
@@ -436,8 +444,8 @@
 
               		<div class="button-write-us">
 
-              			<label class="visually-hidden" for="submit-button">ОТПРАВИТЬ</label>
-              			<input id="submit-button"type="submit" name="submit">
+              			<label for="submit-button">ОТПРАВИТЬ ЗАЯВКУ</label>
+              			<input id="submit-button" type="submit" name="submit">
 
               		</div>
 
