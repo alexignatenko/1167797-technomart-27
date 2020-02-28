@@ -1,4 +1,25 @@
 
+body {
+	margin: 0px;
+	padding: 0px;
+
+    font-family: "Cuprum", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color="#ffffff";
+
+    background-color: "#ffffff";
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+	width: 100%;
+	height: 42px;
+	
+}
 
 .item-gallery {
 	background-image: url("./img/jpg/main_photo_620-266.jpg");
