@@ -2,7 +2,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: Cuprum, Arial, sans-serif;
     font-size: 24px;
     line-height: 32px; 
     background-color: #ffffff;
@@ -15,18 +15,18 @@ a {
 }
 
 .header-top { 
-	display: inline-block;
+	display: flex;
 	background-color: #3d546e;
 	width: 100%;
 	height: 42px;
-	font-family: "Cuprum";
+	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: normal; 
 	text-transform: none;
  }
 
  .header-top a {
- 	font-family: "Cuprum";
+ 	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: 400;
 	color: #ffffff;
@@ -38,7 +38,7 @@ a {
 	height: 100%; 
 }
 
-.icon {
+ .icon {
 	fill-color: #6a7180;;
 }
 
@@ -79,31 +79,68 @@ a {
 }
 
  input {  
-	font-family: "Cuprum";
+	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: 400;
 	color: white;
 	background-color: #3d546e; 
 }
 
-.search-label::before {
+/*.search-label::before {
   content: "";
   background-image: url("./img/svg/icon-search.svg");
   position: absolute;
   width: 17px;
   height: 17px;
   fill-color: #6a7180; 
-}
+}*/
 
+.header-bottom {
+	display: flex;
+	background-color: #f2f6f8;
+	width: 100%;
+	height: 280px;
+}
+ 
 .header-bottom p {
 
-	 font-family: "Cuprum";
+	 font-family: Arial, serif;
 	 font-size: 16px;
-	 font-weight: normal; 
+	 font-weight: 400; 
 	 font-style: italic;
 	 text-transform: none;
 	 color: #ee3643;
 }
+
+.contact-button {
+	display: block;
+	width: 70px;
+	height: 270px;
+	background-color: inherit;
+	font-family: Cuprum;
+    font-size: 14px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #32425c;
+}
+
+.phone-button {
+	display: block;
+	width: 100%;
+	height: 46x;
+	border-width: 2px;
+	border-color: #ffffff;
+	
+}
+
+.phone-button a {
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #ee3643;
+}
+
 
 .open-buttons {
 	display: block;
@@ -118,17 +155,15 @@ a {
 }
 
 
-.contact-button {
-	display: block;
-}
+ 
 
-.contact-button::before {
+/*.contact-button::before {
 	content: "";
 	background-image: url("./img/svg/icon-phone.svg");
 	position: absolute;
 	width: 22px;
 	height: 22px;
-}
+}*/
 
  .item-gallery {
 	background-image: url("./img/jpg/main_photo_620-266.jpg");
