@@ -4,8 +4,7 @@ body {
 	padding: 0px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 24px;
-    line-height: 32px;
-    color="#ffffff";
+    line-height: 32px; 
     background-color: #ffffff;
     background-position: top center;
     background-repeat: no-repeat;
@@ -22,8 +21,15 @@ a {
 	height: 42px;
 	font-family: "Cuprum";
 	font-size: 17px;
-	font-style: normal;
+	font-weight: normal; 
 	text-transform: none;
+ }
+
+ .header-top a {
+ 	font-family: "Cuprum";
+	font-size: 17px;
+	font-weight: 400;
+	color: #ffffff;
  }
 
 .tehnomart-top-button {
@@ -32,7 +38,7 @@ a {
 	height: 100%; 
 }
 
-.header-top svg {
+.icon {
 	fill-color: #6a7180;;
 }
 
@@ -44,8 +50,40 @@ a {
 }
 
 
-.search-form {
+.search-form-block,
+.basket,
+.bookmarks {
 	display: block;
+}
+
+.search-form-block, 
+.bookmarks { 
+	background-color: #3d546e;
+}
+
+.search-form-block { 
+	width: 150px;
+	height: 100%;
+}
+
+.bookmarks {
+	width: 150px;
+	height: 100%;
+}
+
+.basket  {
+	display: block;
+	width: 150px;
+	height: 100%;
+	background-color: #ee3643;
+}
+
+ input {  
+	font-family: "Cuprum";
+	font-size: 17px;
+	font-weight: 400;
+	color: white;
+	background-color: #3d546e; 
 }
 
 .search-label::before {
@@ -54,14 +92,17 @@ a {
   position: absolute;
   width: 17px;
   height: 17px;
+  fill-color: #6a7180; 
 }
 
-.search-form,
-.basket-link { 
-	font-family: "Cuprum";
-	font-size: 17px;
-	font-weight: 400;
-	color: ffffff;
+.header-bottom p {
+
+	 font-family: "Cuprum";
+	 font-size: 16px;
+	 font-weight: normal; 
+	 font-style: italic;
+	 text-transform: none;
+	 color: #ee3643;
 }
 
 .open-buttons {
