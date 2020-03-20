@@ -74,20 +74,22 @@
                   <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               </div>
 
-              <div class="open-buttons">
-                  <a class="open-link" href ="">Войти</a><br>
+              <div class="open-buttons open">
+                  <a class="open-link" href =""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>Войти</a><br>
+              </div>
+              <div class="open-buttons reg">
                   <a class="reg-link" href="">Регистрация</a>
               </div>
+              
 
-              <nav>
-                  <ul class="top-nav">
-                      <il>Главная</il>
-                      <il><a href="">Компания</a></il>
-                      <il><a href="./catalog.html">Каталог</a></il>
-                      <il><a href="">Новости</a></il>
-                      <il><a href="">Спецпредложения</a></il>
-                      <il><a href="">Доставка</a></il>
-                      <il><a href="">Контакты</a></il>
+              <nav class="top-nav"> 
+                      <div class="nav-item">Главная</div>
+                      <div class="nav-item"><a href="">Компания</a></div>
+                      <div class="nav-item"><a href="./catalog.html">Каталог</a></div>
+                      <div class="nav-item"><a href="">Новости</a></div>
+                      <div class="nav-item"><a href="">Спецпредложения</a></div>
+                      <div class="nav-item"><a href="">Доставка</a></div>
+                      <div class="nav-item"><a href="">Контакты</a></div>
                   </ul>
               </nav>
 
@@ -99,7 +101,7 @@
 
         <section class="items">
 
-          <div class="item-category">
+          <div class="item-category materials">
 
             <h3>Материалы</h3>
 
@@ -109,11 +111,13 @@
              <a href="">НА ЛЮБОЙ ВКУС</a>
             </div>
 
-            <span class="new-tooltip">new</span>
+            <div class="new-tooltip">
+            <span>new</span>
+            </div>
 
           </div>
 
-           <div class="item-category">
+           <div class="item-category tool">
 
             <h3>Инструмент</h3>
             <img src="./img/svg/icon-2.svg"alt="инструмент">
@@ -123,7 +127,7 @@
             </div>
           </div>
 
-           <div class="item-category">
+           <div class="item-category technic">
 
             
             <h3>Техника</h3>
@@ -144,7 +148,7 @@
 
             <a class="left"  href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg></a>
 
-            <div class="main-card-button">
+            <div class="main card-button">
              <a href="">ОТКРЫТЬ КАТАЛОГ</a>
             </div>
             
@@ -152,7 +156,8 @@
 
           </div>
 
-           <div class="item-category">
+
+           <div class="item-category discount">
             
              <h3>Скидки 50%</h3>
             
@@ -165,7 +170,7 @@
             
           </div>
 
-           <div class="item-category">
+           <div class="item-category moving">
 
             <h3>Доставка</h3>
 
@@ -184,7 +189,9 @@
 
             <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
             
-            <a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+            <div class="popular-items-button">
+              <a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+            </div>  
 
           </div>
 

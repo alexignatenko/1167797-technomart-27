@@ -127,8 +127,8 @@ a {
 .phone-button {
 	display: block;
 	width: 100%;
-	height: 46x;
-	border-width: 2px;
+	height: 46px;
+	border-width: 4px;
 	border-color: #ffffff;
 	
 }
@@ -144,15 +144,27 @@ a {
 
 .open-buttons {
 	display: block;
+	height: 46px;
+	background-color: #ffffff; 
+
 }
 
-.open-buttons::before {
+.open-buttons a { 
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+
+}
+ 
+/*.open-buttons::before {
 	content: "";
 	background-image: url("./img/svg/icon-login.svg");
 	position: absolute;
 	width: 22px;
 	height: 22px;
-}
+}*/
 
 
  
@@ -165,12 +177,148 @@ a {
 	height: 22px;
 }*/
 
- .item-gallery {
-	background-image: url("./img/jpg/main_photo_620-266.jpg");
-	background-repeat: no-repeat;
-	width: 620px;
-	height: 266px;
+.top-nav { 
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: #3d546e; 
 }
+
+.nav-item { 
+	display: block;  
+	height: 100%; 
+	background-color: #3d546e; 
+	font-family: Cuprum;
+    font-size: 17px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #ffffff;
+}
+
+.nav-item a { 
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+}
+
+.item-category {
+	display: block;
+	width: 300px;
+	height: 124px;
+}
+
+.card-button {
+	display: block;
+	width: 136px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-button a { 
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.materials { 
+	background-color: #ffbf47;
+}
+
+.tool { 
+	background-color: #3bbce3;
+}
+
+.technic { 
+	background-color: #dc91d8;
+}
+
+.discount { 
+	background-color: #8ed78f;
+}
+
+.moving { 
+	background-color: #ffc047;
+}
+
+.item-category h3 {
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: none;
+}
+
+.new-tooltip {
+	display: block;
+	background-color: red;
+}
+
+ .item-gallery { 
+	width: 620px;
+	height: 266px; 
+	background-color: grey; 
+	background-image: url("./img/jpg/main_photo_620-266.jpg"); 
+	background-repeat: no-repeat;
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: none;
+}
+
+.item-gallery h3 {
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.main-card-button { 
+	display: block;
+	width: 200px;
+	height: 40px;
+	background-color: #ee3643;
+}
+
+.main-card-button a { 
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+ 
+.all-popular-items {
+	display: block;
+	width: 100%;
+	height: 90px;
+	background-color: #f9f5f0;
+	font-family: Cuprum;
+    font-size: 30px; 
+    font-style: normal;
+	color: #32425c;
+	text-transform: uppercase; 
+}
+
+.popular-items-button {
+	display: block;
+	width: 253px;
+	height: 40px;
+	background-color: red;
+}
+
+.popular-items-button a {
+	font-family: Cuprum;
+    font-size: 17px; 
+    font-style: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
 
 
 .social-links li {
