@@ -217,7 +217,7 @@ a {
 
 .card-button a { 
 	font-family: Cuprum;
-    font-size: 17px; 
+    font-size: 14px; 
     font-style: normal;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -245,37 +245,49 @@ a {
 
 .item-category h3 {
 	font-family: Cuprum;
-    font-size: 17px; 
+    font-size: 24px; 
     font-style: normal;
+    font-weight: 700;
 	color: #ffffff;
 	text-transform: none;
 }
-
-.new-tooltip {
-	display: block;
-	background-color: red;
-}
-
+ 
  .item-gallery { 
 	width: 620px;
 	height: 266px; 
 	background-color: grey; 
 	background-image: url("./img/jpg/main_photo_620-266.jpg"); 
 	background-repeat: no-repeat;
-	font-family: Cuprum;
-    font-size: 17px; 
-    font-style: normal;
-	color: #ffffff;
-	text-transform: none;
+ 
 }
 
 .item-gallery h3 {
 	font-family: Cuprum;
-    font-size: 17px; 
+    font-size: 36px; 
     font-style: normal;
+    font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
+.item-gallery span { 
+	font-family: Cuprum;
+    font-size: 18px; 
+    font-style: normal;
+    font-weight: 400;
+	color: #ffffff;
+	text-transform: none;
+}
+ 
+.item-gallery a { 
+	font-family: Cuprum;
+    font-size: 14px; 
+    font-style: normal;
+    font-weight: 400;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
 
 .main-card-button { 
 	display: block;
@@ -319,7 +331,38 @@ a {
 	text-transform: uppercase;
 }
 
+.product-card {
+	display: block;
+	width: 220px;
+	height: 318px;
+	border-style: solid;
+	border-color: #eaeaea;
+	border-width: 1px;
+}
 
+.product-card a {
+	font-family: PT Sans;
+    font-size: 18px; 
+    font-style: normal;
+	font-weight: 700;
+	color: #424242;
+ 
+}
+
+.product-card span {
+	color: #aaaaaa;
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+
+.product-card button {
+	font-family: PT Sans;
+    font-size: 18px; 
+    font-style: normal;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: red;
+}
 
 .social-links li {
 	list-style-type: none
