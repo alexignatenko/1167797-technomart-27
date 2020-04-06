@@ -25,14 +25,16 @@ a {
 	text-transform: none;
  }
 
- .header-top a {
+ .header-top a,
+ .tehnomart-bottom-button a {
  	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: 400;
 	color: #ffffff;
  }
 
-.tehnomart-top-button {
+.tehnomart-top-button,
+.tehnomart-bottom-button {
 	background-color: #ee3643;
 	width: 356px;
 	height: 100%; 
@@ -322,22 +324,22 @@ a {
 	text-transform: uppercase; 
 }
 
-.popular-items-button {
+.about-button {
 	display: block;
 	width: 253px;
 	height: 40px;
 	background-color: red;
 }
 
-.popular-makers-button {
+/*.popular-makers-button {
 	display: block;
 	width: 253px;
 	height: 40px;
 	background-color: red;
-}
+}*/
 
 
-.popular-items-button a {
+.about-button a {
 	font-family: Cuprum;
     font-size: 17px; 
     font-style: normal;
@@ -345,13 +347,13 @@ a {
 	text-transform: uppercase;
 }
 
-.popular-makers-button a {
+/*.popular-makers-button a {
 	font-family: Cuprum;
     font-size: 17px; 
     font-style: normal;
 	color: #ffffff;
 	text-transform: uppercase;
-}
+}*/
 
 .product-card {
 	display: block;
@@ -427,16 +429,120 @@ a {
 	text-transform: uppercase; 
 }
 
+.service-list {
+	display: flex;
+	background-color: #ffffff;
+	width: 240px;
+	height: 189px;
+}
+
+.service-list h3 {
+	font-family: Cuprum;
+    font-size: 21px; 
+    font-style: normal;
+    font-weight: 700;
+	color: #32425c;
+	text-transform: uppercase; 
+}
+ 
+ .service-point {
+ 	display: block;
+	background-color: #ffffff;
+	width: 100%;
+	height: 63px;
+
+ }
+
+ .garanty-point,
+ .credit-point {
+ 	background-color: #32425c;
+ }
+
+.garanty-point h3,
+.credit-point h3{
+ 	color: #ffffff;
+ }
+
+.service-card h3 {
+	font-family: Cuprum;
+    font-size: 36px; 
+    font-style: normal;
+	color: #32425c;
+	text-transform: uppercase; 
+}
+
+.service-card p {
+	font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+}
+
+.service-card label {
+	font-family: PT Sans;
+    font-size: 14px;
+    font-weight: 400; 
+    font-style: normal;
+    text-transform: uppercase; 
+	color: #ffffff;
+}
+  	
+.service-card input {
+	width: 196px;
+	height: 40px;
+	background-color: #ff5357;
+	border-radius: 5px;
+}
+
+.about h2 {
+	font-family: Cuprum;
+    font-size: 30px; 
+    font-style: normal;
+	color: #000000;
+	text-transform: uppercase; 
+
+}
+
+.about p {
+	font-family: PT Sans;
+    font-size: 13px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+
+}
+
+.about li {
+	font-family: Cuprum;
+    font-size: 18px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+}
+
+.transport-companies {
+	list-style-image: url("./img/svg/transprot-list-icon.svg");
+}
+
+.way-button {
+	width: 100%;
+} 
+
+
+.map-image {
+	border-radius: 5px; 
+}
 .social-links li {
-	list-style-type: none
+	list-style-type: none;
 }
 
 .user-links li {
-	list-style-type: none
+	list-style-type: none;
 }
 
 .top-nav li {
-	list-style-type: none
+	list-style-type: none;
 }
 
 .user-button {
@@ -469,7 +575,7 @@ a {
     width: 24px;
     height: 24px;
     border: 0;
-    background: url('./img/svg/filter-button.svg');
+    background: url("./img/svg/filter-button.svg");
     cursor: pointer;
 }
 
@@ -477,7 +583,7 @@ a {
     width: 24px;
     height: 24px;
     border: 0;
-    background: url('./img/svg/filter-button.svg');
+    background: url("./img/svg/filter-button.svg");
     cursor: pointer;
 }
 
@@ -487,7 +593,7 @@ input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type
 }
 
 .bottom-nav li {
-	list-style-image: url('./img/svg/icon-right-small.svg');
+	list-style-image: url("./img/svg/icon-right-small.svg");
 }
 
 .visually-hidden {
@@ -512,12 +618,12 @@ input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked), input[type
 
 }
 
-.service-card-credit {
+.credit-card {
 	display: none;
 
 }
 
-.service-card-garanty {
+.garanty-card {
 	display: none;
 
 }
