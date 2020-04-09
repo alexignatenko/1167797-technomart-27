@@ -45,9 +45,6 @@ a {
 	background-color: #ca2c37;
 }
 
- .icon {
-	fill-color: #6a7180;
-}
 
 .order-button {
 	width: 150px;
@@ -66,6 +63,7 @@ a {
 	background-color: #212a3a;
 }
 
+
 .search-form-block { 
 	width: 150px;
 	height: 100%;
@@ -76,9 +74,38 @@ a {
 	height: 100%;
 }
 
+.bookmarks-link::before {
+  content: "";
+  background-image: url("./img/svg/icon-bookmark.svg");
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  vertical-align: middle;
+  fill-color: #6a7180;
+
+}
+
 .basket  {
 	width: 150px;
 	height: 100%;
+}
+
+.basket-link::before {
+  content: "";
+  background-image: url("./img/svg/icon-cart.svg");
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  vertical-align: middle;
+  fill-color: #6a7180;
+
+}
+
+.bookmarks:hover a,
+.basket:hover a {
+	fill-color: #ffffff;
 }
 
  input {  
@@ -89,14 +116,14 @@ a {
 	background-color: #3d546e; 
 }
 
-/*.search-label::before {
+.search-label::before {
   content: "";
   background-image: url("./img/svg/icon-search.svg");
   position: absolute;
   width: 17px;
   height: 17px;
   fill-color: #6a7180; 
-}*/
+}
 
 .header-bottom {
 	display: flex;
