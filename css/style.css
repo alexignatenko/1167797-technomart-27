@@ -59,8 +59,19 @@ a {
 	background-color: #3d546e;
 }
 
-.top-forms:hover {
+.top-forms:hover,
+.top-forms:hover input   {
 	background-color: #212a3a;
+}
+
+.top-icon svg path {
+	fill: #6a7180;
+	stroke: #6a7180;
+}
+
+.bookmarks:active,
+.basket:active {
+	background-color: #161d29;
 }
 
 
@@ -74,7 +85,7 @@ a {
 	height: 100%;
 }
 
-.bookmarks-link::before {
+/*.bookmarks-link::before {
   content: "";
   background-image: url("./img/svg/icon-bookmark.svg");
   display: inline-block;
@@ -84,14 +95,14 @@ a {
   vertical-align: middle;
   fill-color: #6a7180;
 
-}
+}*/
 
 .basket  {
 	width: 150px;
 	height: 100%;
 }
 
-.basket-link::before {
+/*.basket-link::before {
   content: "";
   background-image: url("./img/svg/icon-cart.svg");
   display: inline-block;
@@ -101,7 +112,7 @@ a {
   vertical-align: middle;
   fill-color: #6a7180;
 
-}
+}*/
 
 .bookmarks:hover a,
 .basket:hover a {
