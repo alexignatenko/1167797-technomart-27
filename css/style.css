@@ -45,6 +45,10 @@ a {
 	background-color: #ca2c37;
 }
 
+.tehnomart-top-button:active {
+	background-color: #ba2732;
+}
+
 
 .order-button {
 	width: 150px;
@@ -53,6 +57,13 @@ a {
     color: white;
 }
 
+.order-button:active {
+	background-color: #518534;
+}
+
+.order-button:active a{
+	color: #999ca1;
+}
 
 .top-forms {
 	display: block;
@@ -74,10 +85,35 @@ a {
 	background-color: #161d29;
 }
 
+.bookmarks:active a,
+.basket:active a {
+	color: #999ca1;
+}
+
 
 .search-form-block { 
 	width: 150px;
 	height: 100%;
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+}
+
+.search-form:active, 
+.search-form:active input {
+	background-color: #ffffff;
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #000000;
+}
+
+.search-form:active top-icon {
+	fill: #ee3643;
+	stroke: #ee3643;
 }
 
 .bookmarks {
@@ -119,13 +155,7 @@ a {
 	fill-color: #ffffff;
 }
 
- input {  
-	font-family: Cuprum;
-	font-size: 17px;
-	font-weight: 400;
-	color: white;
-	background-color: #3d546e; 
-}
+
 
 .search-label::before {
   content: "";
@@ -198,6 +228,30 @@ a {
 	color: #000000;
 
 }
+
+.open-buttons:hover .open-link {
+	fill: #32425c;
+	stroke: #32425c;
+}
+
+.open-buttons:hover a {
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #ee3643;
+}
+
+
+
+.open-buttons:active a {
+	font-family: Cuprum;
+    font-size: 21px;
+    font-weight: 400; 
+    font-style: normal;
+	color: #b2b2b2;
+}
+
  
 /*.open-buttons::before {
 	content: "";
@@ -247,6 +301,18 @@ a {
 	color: #ffffff;
 }
 
+.nav-item:hover {
+	background-color: #293449;
+}
+
+.nav-item:active {
+	background-color: #1d2739;
+}
+
+.nav-item:active a {
+	background-color: #868c95;
+}
+
 .item-category {
 	display: block;
 	width: 300px;
@@ -257,7 +323,16 @@ a {
 	display: block;
 	width: 136px;
 	height: 40px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: #e5e5e5;
+	border-radius: 2px;
+}
+
+.card-button:hover {
+	background-color: #cccccc;
+}
+
+.card-button:active {
+	background-color: #b2b2b2;
 }
 
 .card-button a { 
@@ -267,6 +342,19 @@ a {
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
+.main-button {
+	background-color: #ee3643;
+}
+
+.main-button:hover {
+	background-color: #ca2c37;
+}
+
+.main-button:active {
+	background-color: #ba2732;
+
+} 
 
 .materials { 
 	background-color: #ffbf47;
