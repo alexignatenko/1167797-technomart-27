@@ -26,11 +26,20 @@ a {
 
 .main-container {
 	display: flex;
- 	justify-content: space-between;
+	justify-content: space-between;
 	width: 940px;
 	min-height: inherit;
 	margin: 0 auto;
 	padding: 0 0;
+}
+
+.left-container {
+	width: 275px;
+}
+
+.right-container {
+	width: 300px;
+
 }
 
  .header-top a,
@@ -45,7 +54,7 @@ a {
 .tehnomart-top-button,
 .tehnomart-bottom-button {
 	background-color: #ee3643;
-	width: 356px;
+	width: 220px;
 	min-height: inherit; 
 }
 
@@ -77,6 +86,7 @@ a {
 	display: block;
 	background-color: #3d546e;
 	min-height: inherit; 
+	margin-right: 0px;
 }
 
 .top-forms:hover,
@@ -101,8 +111,9 @@ a {
 
 
 .search-form-block { 
-	width: 150px;
-	min-height: inherit; 
+	width: 50px;
+	min-height: 20px; 
+	margin-left: 0px;
 	font-family: Cuprum;
     font-size: 21px;
     font-weight: 400; 
@@ -126,12 +137,12 @@ a {
 }
 
 .basket {
-	width: 150px;
+	width: 80px;
 	min-height: inherit; 
 }
 
 .bookmarks {
-	width: 150px;
+	width: 85px;
 	min-height: inherit; 
 }
 
