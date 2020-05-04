@@ -17,33 +17,40 @@ a {
 .header-top { 
 	background-color: #3d546e;
 	width: 100%;
-	min-height: 42px;
+	height: 42px;
 	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: normal; 
 	text-transform: none;
+
  }
 
 .main-container {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	min-height: inherit;
+	height: inherit;
 	margin: 0 auto;
 	padding: 0 0;
+
 }
 
 .left-container {
-	width: 275px;
+	display: flex;
+	width: 440px;
+	justify-content: flex-start;
 }
 
 .right-container {
-	width: 300px;
+	display: flex;
+	width: 500px;
+	justify-content: flex-end;
 
 }
 
  .header-top a,
- .tehnomart-bottom-button a {
+ .tehnomart-bottom-button a,
+ .order-button a {
  	font-family: Cuprum;
 	font-size: 17px;
 	font-weight: 400;
@@ -55,8 +62,10 @@ a {
 .tehnomart-bottom-button {
 	background-color: #ee3643;
 	width: 220px;
-	min-height: inherit; 
-}
+	height: inherit; 
+	text-align: center;
+	padding-top: 10px;
+ }
 
 .tehnomart-top-button:hover {
 	background-color: #ca2c37;
@@ -68,10 +77,14 @@ a {
 
 
 .order-button {
+	display: block;
 	width: 150px;
-	min-height: inherit; 
+	height: inherit; 
 	background-color: #63a63e;
     color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
 }
 
 .order-button:active {
@@ -85,8 +98,11 @@ a {
 .top-forms {
 	display: block;
 	background-color: #3d546e;
-	min-height: inherit; 
+	height: inherit; 
 	margin-right: 0px;
+	text-align: center;
+	vertical-align: middle;
+	width: 140px;
 }
 
 .top-forms:hover,
@@ -95,6 +111,7 @@ a {
 }
 
 .top-icon svg path {
+	position: absolute;
 	fill: #6a7180;
 	stroke: #6a7180;
 }
@@ -112,7 +129,6 @@ a {
 
 .search-form-block { 
 	width: 50px;
-	min-height: 20px; 
 	margin-left: 0px;
 	font-family: Cuprum;
     font-size: 21px;
@@ -136,15 +152,6 @@ a {
 	stroke: #ee3643;
 }
 
-.basket {
-	width: 80px;
-	min-height: inherit; 
-}
-
-.bookmarks {
-	width: 85px;
-	min-height: inherit; 
-}
 
 /*.bookmarks-link::before {
   content: "";
@@ -192,8 +199,32 @@ a {
 	background-color: #f2f6f8;
 	width: 100%;
 	height: 280px;
+	margin: 0 0;
 }
- 
+
+
+.header-container {
+	display: flex;
+	width: 940px;
+	height: 220px;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: flex-start;
+} 
+
+.second-header {
+	justify-content: space-between;
+	display: flex;
+	width: 940px;
+	height: 220px;
+	margin: 0 auto;
+}
+
+.top-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
 .header-bottom p {
 
 	 font-family: Arial, serif;
@@ -334,6 +365,38 @@ a {
 	background-color: #868c95;
 }
 
+.middle-container {
+	display: flex;
+	width: 940px;
+	min-height: 1330px;
+	margin-top: 60px;
+	margin-bottom: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.card-top {
+	display: flex;
+	width: 100%;
+}
+
+.bottom-cards {
+	display: flex;
+	width: 100%;
+}
+
+.right-cards {
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+
+
 .item-category {
 	display: block;
 	width: 300px;
@@ -409,8 +472,7 @@ a {
  .item-gallery { 
 	width: 620px;
 	height: 266px; 
-	background-color: grey; 
-	background-image: url("./img/jpg/main_photo_620-266.jpg"); 
+	background-image: url("/img/jpg/main_photo_620-266"); 
 	background-repeat: no-repeat;
  
 }
@@ -460,7 +522,6 @@ a {
  
 .all-popular-items,
 .all-popular-makers {
-	display: block;
 	width: 100%;
 	height: 90px;
 	background-color: #f9f5f0;
@@ -474,6 +535,20 @@ a {
     font-style: normal;
 	color: #32425c;
 	text-transform: uppercase; 
+}
+
+.popular-cards {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+}
+
+.makers1,
+.makers2 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 .about-button {
